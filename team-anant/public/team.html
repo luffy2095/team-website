@@ -12,6 +12,8 @@
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/simpleSidebar.css" rel="stylesheet">
     <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <link href="css/ie10-viewport-bug-workaround.css" rel="stylesheet">
@@ -31,65 +33,914 @@
 <!-- NAVBAR
 ================================================== -->
   <body>
-    <div class="navbar-wrapper">
-      <div class="container">
+    <div id="wrapper" class="toggled">
+      <div id="sidebar-wrapper" style="margin-top:0px;">
+        <ul class="sidebar-nav">
+              <li class="sidebar-brand">
+                  <a href="index.html">
+                      Team Anant
+                  </a>
+              </li>
+              <li>
+                  <a href="index.html">Home</a>
+              </li>
+              <li>
+                <a href="#subsysDrop" class="dropdown-toggle" data-toggle="collapse">SubSystems<span class="caret"></span></a>
+                <div class="collapse" id="subsysDrop">
+                <a href="subSystems.html#overview" style="text-indent: 50px;" class="smoothScroll">Overview</a>
+                <a href="subSystems.html#obc" style="text-indent: 50px;" class="smoothScroll">OBC</a>
+                <a href="subSystems.html#eps" style="text-indent: 50px;" class="smoothScroll">EPS</a>
+                <a href="subSystems.html#adcs" style="text-indent: 50px;" class="smoothScroll">ADCS</a>
+                <a href="subSystems.html#mech" style="text-indent: 50px;" class="smoothScroll">MECH</a>
+                <a href="subSystems.html#tele" style="text-indent: 50px;" class="smoothScroll">TELE</a>
+                <a href="subSystems.html#payload" style="text-indent: 50px;" class="smoothScroll">PAYLOAD</a>
+                </div>
+              </li>
+              <li>
+                <a href="#teamDrop" class="dropdown-toggle" data-toggle="collapse">Team <span class="caret"></span></a>
+                <div class="collapse" id="teamDrop">
+                  <a href="#Iimage" style="text-indent: 50px;" class="smoothScroll">Our Team</a>
+                  <a href="#obcid" style="text-indent: 50px;" class="smoothScroll">OBC</a>
+                  <a href="#epsid" style="text-indent: 50px;" class="smoothScroll">EPS</a>
+                  <a href="#adcsid" style="text-indent: 50px;" class="smoothScroll">ADCS</a>
+                  <a href="#mechid" style="text-indent: 50px;" class="smoothScroll">MECH</a>
+                  <a href="#teleid" style="text-indent: 50px;" class="smoothScroll">TELE</a>
+                  <a href="#payloadid" style="text-indent: 50px;" class="smoothScroll">PAYLOAD</a>
+                </div>
+              </li>
+              <li>
+                  <a href="sponsor.html">Sponsor</a>
+              </li>
+              <li>
+                  <a href="contactUs.html">ContactUs</a>
+              </li>
+        </ul>
+      </div>
+      <!--sidebar wrapper end // sidebar wrapper takes care of sidebar-->
 
-        <nav class="navbar navbar-inverse navbar-fixed-top">
-          <div class="container">
-            <div class="navbar-header">
-              <a class="navbar-brand" href="index.html">Team Anant</a>
+<!-- page content wrapper start ## any content in the page should go in this wrapper-->
+
+      <div id="page-content-wrapper">
+        <div class="container-fluid pull-left">
+          <a href="#menu-toggle" class="btn btn-default" style="position:fixed;" id="menu-toggle"><i class="glyphicon glyphicon-th-list"></i></a>
+        </div>
+        <div class="row" id="Iimage">
+          <div class="container marketing" id="image_marketing">
+            <img id="Index_cover" width="100%" class="img-responsive" src="images/team_cover_1.jpg" >
+          </div><!-- team photo-->
+        </div>
+
+        <div class="container marketing" >
+          <div class = "stu-coord">
+
+            <div class="col-lg-3">
+              <div class="panel panel-default" >
+                <div class="panel-heading">
+                  <strong>Dr. Kaushar Vaidya </strong>
+                </div>
+
+                <div class="panel-body">
+                  <div class="profile_image">
+                    <img src="images/kaushar_madam.jpg">
+                  </div>
+                </div>
+              <div class="info">
+                <h2 style="font-style:bold;">Faculty Coordinator </h2>
+              </div>
+              </div>
             </div>
-            <div id="navbar" class="navbar-collapse collapse">
-              <ul class="nav navbar-nav">
-                <li id="index" ><a href="index.html" class="smoothScroll" >Home</a></li>
-                <li id="subsystem"><a href="subSystems.html" class="smoothScroll">SubSystems</a></li>
 
-<!-- Drowdown-->
-                <li class="dropdown active">
-                  <a class="dropdown-toggle" data-toggle="dropdown" role="button" href="#">Team<span class="caret"></span></a>
-                  <ul class="dropdown-menu">
-                    <li class="active" ><a href="#Timage" class="smoothScroll">Team</a></li>
-                    <li><a href="#obc_id" class="smoothScroll">OBC</a></li>
-                    <li><a href="#eps_id" class="smoothScroll">EPS</a></li>
-                    <li><a href="#adcs_id" class="smoothScroll">ADCS</a></li>
-                    <li><a href="#mech_id" class="smoothScroll">MECH</a></li>
-                    <li><a href="#tele_id" class="smoothScroll">TELE</a></li>
-                  </ul>
-                </li>
-<!-- dropdown comp-->
-<!--                <li id="team" class="active"><a href="#">Team</a></li>-->
-                <li id="Donate"><a href="donate.html">Donate</a></li>
-                <li id="contactUs"><a href="contactUs.html">ContactUs</a></li>
-              </ul>
+            <div class="col-lg-3">
+              <div class="panel panel-default" >
+                <div class="panel-heading">
+                  <strong>Dr. Chandrashekar </strong>
+                </div>
+
+                <div class="panel-body">
+                  <div class="profile_image">
+                    <img src="images/unknown-person.png">
+                  </div>
+                </div>
+              <div class="info">
+                <h2 style="font-style:bold;">Faculty Advisor</h2>
+              </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3">
+
+              <div class="panel panel-default" >
+                <div class="panel-heading">
+                  <strong style="font-style:normal;font-size:20px;">Parth Garg </strong>
+                </div>
+
+                <div class="panel-body">
+                  <div class="profile_image">
+                    <img src="images/parth_garg.png">
+                  </div>
+                </div>
+              <div class="info">
+                <h2 style="font-size:18px;">Student Coordinator</h2>
+              </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3">
+
+              <div class="panel panel-default" >
+                <div class="panel-heading">
+                  <strong>Vatsal Panwar </strong>
+                </div>
+
+                <div class="panel-body">
+                  <div class="profile_image">
+                    <img src="images/Vatsal.JPG">
+                  </div>
+                </div>
+              <div class="info">
+                <h2>Systems Engineer </h2>
+              </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+<!-- STU FAC coord END #################3-->
+
+        <hr class="featurette-divider" id="obcid">
+
+<!-- OBC ################################3-->
+<!-- On board Computer team leads---->
+
+        <div class="container marketing" >
+          <div class="obc">
+            <h2>OnBoard Computer Subsystem</h2>
+          </div>
+          <div class = "team-leads" >
+            <div class="col-lg-4">
+              <div class="panel panel-default" >
+                <div class="panel-heading">
+                  <strong>Mr. Ashish Mishra </strong>
+                </div>
+
+                <div class="panel-body">
+                  <div class="profile_image">
+                    <img src="images/ashish_mishra.jpeg">
+                  </div>
+                </div>
+              <div class="info">
+                <h2>Faculty Mentor</h2>
+              </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4">
+
+              <div class="panel panel-default" >
+                <div class="panel-heading">
+                  <strong>Mr. Devesh Samaiya </strong>
+                </div>
+
+                <div class="panel-body">
+                  <div class="profile_image">
+                    <img src="images/devesh_samaiya.jpeg">
+                  </div>
+                </div>
+              <div class="info">
+                <h2>Faculty Mentor </h2>
+              </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4">
+
+              <div class="panel panel-default" >
+                <div class="panel-heading">
+                  <strong>Shubham Sharma </strong>
+                </div>
+
+                <div class="panel-body">
+                  <div class="profile_image">
+                    <img src="images/Shubham.JPG">
+                  </div>
+                </div>
+              <div class="info">
+                <h2>Team Lead</h2>
+              </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+<!-- onboard  members-->
+<!-- On board Computer team-members---->
+
+        <div class="container marketing" >
+          <div class = "team-members">
+            <div class="col-lg-4">
+              <div class="panel panel-default" >
+                <div class="panel-heading">
+                  <strong>Shubhendra Singh</strong>
+                </div>
+
+                <div class="panel-body">
+                  <div class="profile_image">
+                    <img src="images/shubhendra.JPG">
+                  </div>
+                </div>
+              <div class="info">
+                <h2>Member</h2>
+              </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4">
+
+              <div class="panel panel-default" >
+                <div class="panel-heading">
+                  <strong>Praneet Sherki</strong>
+                </div>
+
+                <div class="panel-body">
+                  <div class="profile_image">
+                    <img src="images/unknown-person.png">
+                  </div>
+                </div>
+                <div class="info">
+                  <h2>Member</h2>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4">
+
+              <div class="panel panel-default" >
+                <div class="panel-heading">
+                  <strong>Abhishek Goel</strong>
+                </div>
+
+                <div class="panel-body">
+                  <div class="profile_image">
+                    <img src="images/AbhishekG.JPG">
+                  </div>
+                </div>
+                <div class="info">
+                  <h2>Member</h2>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4">
+
+              <div class="panel panel-default" >
+                <div class="panel-heading">
+                  <strong>Tanuj Kumar</strong>
+                </div>
+
+                <div class="panel-body">
+                  <div class="profile_image">
+                    <img src="images/Tanuj.JPG">
+                  </div>
+                </div>
+                <div class="info">
+                  <h2>Member</h2>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4">
+
+              <div class="panel panel-default" >
+                <div class="panel-heading">
+                  <strong>Saurabh Raje</strong>
+                </div>
+
+                <div class="panel-body">
+                  <div class="profile_image">
+                    <img src="images/Saurabh.JPG">
+                  </div>
+                </div>
+                <div class="info">
+                  <h2>Member</h2>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+<!-- OBC complete ####################33333-->
+
+<!-- EPS Starting #################33-->
+
+        <hr class="featurette-divider" id="epsid">
+
+        <!-- EPS ################################3-->
+        <!-- EPS team leads---->
+
+        <div class="container marketing" >
+          <div class="eps">
+            <h2>Electrical Power System</h2>
+          </div>
+          <div class = "team-leads">
+            <div class="col-lg-4">
+              <div class="panel panel-default" >
+                <div class="panel-heading">
+                  <strong>Dr. Anu Gupta</strong>
+                </div>
+
+                <div class="panel-body">
+                  <div class="profile_image">
+                    <img src="images/unknown-person.png">
+                  </div>
+                </div>
+              <div class="info">
+                <h2>Faculy Mentor</h2>
+              </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4">
+              <div class="panel panel-default" >
+                <div class="panel-heading">
+                  <strong>Dr. Dheerendra Singh</strong>
+                </div>
+
+                <div class="panel-body">
+                  <div class="profile_image">
+                    <img src="images/Dheerendra_Singh.jpeg">
+                  </div>
+                </div>
+              <div class="info">
+                <h2>Faculy Mentor</h2>
+              </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+
+              <div class="panel panel-default" >
+                <div class="panel-heading">
+                  <strong>Parag Agrawal </strong>
+                </div>
+
+                <div class="panel-body">
+                  <div class="profile_image">
+                    <img src="images/Parag.JPG">
+                  </div>
+                </div>
+              <div class="info">
+                <h2>Team Lead</h2>
+              </div>
+              </div>
             </div>
           </div>
-        </nav>
+        </div>
+        <!-- eps  members-->
+        <!-- eps team-members---->
+
+        <div class="container marketing" >
+          <div class = "team-members">
+            <div class="col-lg-4">
+              <div class="panel panel-default" >
+                <div class="panel-heading">
+                  <strong>Vaibhav Singh </strong>
+                </div>
+
+                <div class="panel-body">
+                  <div class="profile_image">
+                    <img src="images/Viabhav.JPG">
+                  </div>
+                </div>
+              <div class="info">
+                <h2>Member </h2>
+              </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4">
+
+              <div class="panel panel-default" >
+                <div class="panel-heading">
+                  <strong>Vedant Pathak </strong>
+                </div>
+
+                <div class="panel-body">
+                  <div class="profile_image">
+                    <img src="images/Vedant.JPG">
+                  </div>
+                </div>
+                <div class="info">
+                  <h2>Member </h2>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4">
+
+              <div class="panel panel-default" >
+                <div class="panel-heading">
+                  <strong>Abhinav Sundar</strong>
+                </div>
+
+                <div class="panel-body">
+                  <div class="profile_image">
+                    <img src="images/Abhinav.JPG">
+                  </div>
+                </div>
+                <div class="info">
+                  <h2>Member  </h2>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+        <!-- eps complete ####################33333-->
+<!-- adcs Starting #################33-->
+
+        <hr class="featurette-divider" id="adcsid">
+
+        <!-- adcs ################################3-->
+        <!-- adcs team leads---->
+
+        <div class="container marketing" >
+          <div class="adcs">
+            <h2>Attitude Determination and Control Substem</h2>
+          </div>
+          <div class = "team-leads">
+            <div class="col-lg-4">
+              <div class="panel panel-default" >
+                <div class="panel-heading">
+                  <strong>Dr. Anshuman Dalvi </strong>
+                </div>
+
+                <div class="panel-body">
+                  <div class="profile_image">
+                    <img src="images/Anshuman_Dalvi.jpeg">
+                  </div>
+                </div>
+              <div class="info">
+                <h2>Faculty Mentor</h2>
+              </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4">
+
+              <div class="panel panel-default" >
+                <div class="panel-heading">
+                  <strong>Dr. R.R. Mishra  </strong>
+                </div>
+
+                <div class="panel-body">
+                  <div class="profile_image">
+                    <img src="images/mishra_sir.jpeg">
+                  </div>
+                </div>
+              <div class="info">
+                <h2>Faclty Mentor</h2>
+              </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+
+              <div class="panel panel-default" >
+                <div class="panel-heading">
+                  <strong>Pinakin Padalia </strong>
+                </div>
+
+                <div class="panel-body">
+                  <div class="profile_image">
+                    <img src="images/Pinakin.JPG">
+                  </div>
+                </div>
+              <div class="info">
+                <h2>Team Lead</h2>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- adcs  members-->
+        <!-- adcs team-members---->
+
+        <div class="container marketing" >
+          <div class = "team-members">
+            <div class="col-lg-4">
+              <div class="panel panel-default" >
+                <div class="panel-heading">
+                  <strong>Nityasa Mishra</strong>
+                </div>
+
+                <div class="panel-body">
+                  <div class="profile_image">
+                    <img src="images/unknown-person.png">
+                  </div>
+                </div>
+              <div class="info">
+                <h2>Member</h2>
+              </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4">
+
+              <div class="panel panel-default" >
+                <div class="panel-heading">
+                  <strong>Awais Ahmed </strong>
+                </div>
+
+                <div class="panel-body">
+                  <div class="profile_image">
+                    <img src="images/Awais.JPG">
+                  </div>
+                </div>
+                <div class="info">
+                  <h2>Member</h2>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4">
+
+              <div class="panel panel-default" >
+                <div class="panel-heading">
+                  <strong>Rudrakh Panigrahi</strong>
+                </div>
+
+                <div class="panel-body">
+                  <div class="profile_image">
+                    <img src="images/Rudakh.JPG">
+                  </div>
+                </div>
+                <div class="info">
+                  <h2>Member</h2>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4">
+
+              <div class="panel panel-default" >
+                <div class="panel-heading">
+                  <strong>Tushar Goyal</strong>
+                </div>
+
+                <div class="panel-body">
+                  <div class="profile_image">
+                    <img src="images/unknown-person.png">
+                  </div>
+                </div>
+                <div class="info">
+                  <h2>Member </h2>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4">
+
+              <div class="panel panel-default" >
+                <div class="panel-heading">
+                  <strong>Tushar Kaushik</strong>
+                </div>
+
+                <div class="panel-body">
+                  <div class="profile_image">
+                    <img src="images/Tushar.JPG">
+                  </div>
+                </div>
+                <div class="info">
+                  <h2>Member</h2>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <!-- adcs complete ####################33333-->
+
+<!-- mech Starting #################33-->
+
+        <hr class="featurette-divider" id="mechid">
+
+        <!-- mech ################################3-->
+        <!-- mech team leads---->
+
+        <div class="container marketing" >
+          <div class="mech">
+            <h2>Structural and Thermal Subsystem </h2>
+          </div>
+          <div class = "team-leads">
+            <div class="col-lg-6">
+              <div class="panel panel-default" >
+                <div class="panel-heading">
+                  <strong>Dr. Murali Palla</strong>
+                </div>
+
+                <div class="panel-body">
+                  <div class="profile_image">
+                    <img src="images/Murali_Palla.jpeg">
+                  </div>
+                </div>
+              <div class="info">
+                <h2>Faculty Mentor</h2>
+              </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6">
+
+              <div class="panel panel-default" >
+                <div class="panel-heading">
+                  <strong>Divyansh Khattak</strong>
+                </div>
+
+                <div class="panel-body">
+                  <div class="profile_image">
+                    <img src="images/unknown-person.png">
+                  </div>
+                </div>
+              <div class="info">
+                <h2>Team Lead</h2>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- mech  members-->
+        <!-- mech team-members---->
+
+        <div class="container marketing" >
+          <div class = "team-members" style="margin-left:300px;">
+            <div class="col-lg-4">
+              <div class="panel panel-default" >
+                <div class="panel-heading">
+                  <strong>Rajshikhar Gupta</strong>
+                </div>
+
+                <div class="panel-body">
+                  <div class="profile_image">
+                    <img src="images/Rajshekhar.jpg">
+                  </div>
+                </div>
+              <div class="info">
+                <h2>Member</h2>
+              </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4">
+
+              <div class="panel panel-default" >
+                <div class="panel-heading">
+                  <strong>Joy Mukherjee</strong>
+                </div>
+
+                <div class="panel-body">
+                  <div class="profile_image">
+                    <img src="images/Joy.JPG">
+                  </div>
+                </div>
+                <div class="info">
+                  <h2>Member </h2>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+<!-- mech complete ####################33333-->
+
+<!-- tele Starting #################33-->
+
+        <hr class="featurette-divider" id="teleid">
+
+        <!-- tele ################################3-->
+        <!-- tele team leads---->
+
+        <div class="container marketing" >
+          <div class="tele">
+            <h2>Telecommunication and Ground Station </h2>
+          </div>
+          <div class = "team-leads">
+            <div class="col-lg-6">
+              <div class="panel panel-default" >
+                <div class="panel-heading">
+                  <strong>Dr. Praveen Kumar</strong>
+                </div>
+
+                <div class="panel-body">
+                  <div class="profile_image">
+                    <img src="images/Praveen_Kumar.jpeg">
+                  </div>
+                </div>
+              <div class="info">
+                <h2>Faculty Mentor </h2>
+              </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6">
+
+              <div class="panel panel-default" >
+                <div class="panel-heading">
+                  <strong>Abhishek Shankar</strong>
+                </div>
+
+                <div class="panel-body">
+                  <div class="profile_image">
+                    <img src="images/Abhishek Shankar.JPG">
+                  </div>
+                </div>
+              <div class="info">
+                <h2>Team Lead</h2>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- tele  members-->
+        <!-- tele team-members---->
+
+        <div class="container marketing" >
+          <div class = "team-members" style"margin-left:300px;">
+            <div class="col-lg-4">
+              <div class="panel panel-default" >
+                <div class="panel-heading">
+                  <strong>Garv Sharma </strong>
+                </div>
+
+                <div class="panel-body">
+                  <div class="profile_image">
+                    <img src="images/Garv.JPG">
+                  </div>
+                </div>
+              <div class="info">
+                <h2>Member</h2>
+              </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4">
+
+              <div class="panel panel-default" >
+                <div class="panel-heading">
+                  <strong>Gaurav Virmani</strong>
+                </div>
+
+                <div class="panel-body">
+                  <div class="profile_image">
+                    <img src="images/Gaurav.JPG">
+                  </div>
+                </div>
+                <div class="info">
+                  <h2>Member</h2>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+<!-- tele complete ####################33333-->
+
+<!-- payload Starting #################33-->
+
+        <hr class="featurette-divider" id="payloadid">
+
+        <!-- payload ################################3-->
+        <!-- payload team leads---->
+
+        <div class="container marketing" >
+          <div class="payload">
+            <h2>Payload Subsystem</h2>
+          </div>
+          <div class = "team-leads">
+            <div class="col-lg-6">
+              <div class="panel panel-default" >
+                <div class="panel-heading">
+                  <strong>Dr. Rajkumar Gupta</strong>
+                </div>
+
+                <div class="panel-body">
+                  <div class="profile_image">
+                    <img src="images/Rajkumar_Gupta.jpg">
+                  </div>
+                </div>
+              <div class="info">
+                <h2>Faculty Mentor </h2>
+              </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6">
+
+              <div class="panel panel-default" >
+                <div class="panel-heading">
+                  <strong>Akshay Golechha</strong>
+                </div>
+
+                <div class="panel-body">
+                  <div class="profile_image">
+                    <img src="images/Akshay.JPG">
+                  </div>
+                </div>
+              <div class="info">
+                <h2>Team Lead</h2>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- payload  members-->
+        <!-- payload team-members---->
+
+        <div class="container marketing" >
+          <div class = "team-members" style"margin-left:300px;">
+            <div class="col-lg-4">
+              <div class="panel panel-default" >
+                <div class="panel-heading">
+                  <strong>Divanshu Gupta</strong>
+                </div>
+
+                <div class="panel-body">
+                  <div class="profile_image">
+                    <img src="images/Divanshu.JPG">
+                  </div>
+                </div>
+              <div class="info">
+                <h2>Member</h2>
+              </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4">
+
+              <div class="panel panel-default" >
+                <div class="panel-heading">
+                  <strong>Rishabh Jain</strong>
+                </div>
+
+                <div class="panel-body">
+                  <div class="profile_image">
+                    <img src="images/Rishabh.JPG">
+                  </div>
+                </div>
+                <div class="info">
+                  <h2>Member</h2>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+
+<!-- payload complete ####################33333-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
       </div>
     </div>
-
-
-    <!-- team photo -->
-    <div class="row" id="Timage">
-      <div class="container marketing">
-        <img id="team_cover" width="100%" class="img-responsive" src="images/team_cover_1.jpg" >
-        <h2>Team Anant</h2>
-        <p>The Team along with the faculty coordinator Dr. Kaushar Vaidya. With new members joining our team this semester, we are all set with new goals for the project this year!</p>
-      </div><!-- team photo-->
-    </div>
-
+<!--###############################################################3-->
 <!-- Teacher coord , stu coord , syste engineer --->
-    <div class="container marketing" >
-      <div class = "stu-coord">
-        <div class="col-lg-4">
-
-          <div class="profile_image">
+        <!--  <div class="profile_image">
             <img id="teacher" width="200px" height="200px" class="img-rounded" alt="image here" src="images/temp.jpg" >
           </div>
 
           <h2>Faculty Coordinator</h2>
-          <h3>Dr. Kaushar Vaidya</h3>
-        </div>
+          <h3>Dr. Kaushar Vaidya</h3>-->
+<!--
         <div class="col-lg-4">
           <div class="profile_image">
             <img id="stu" width="200px" height="200px" class="img-rounded" alt="image here" src="images/parth_garg.jpg" >
@@ -107,18 +958,18 @@
           <h3>Vatsal Panwar<br>4th Year Dual Degree<br>M.Sc Physics B.E Electrical Engineering</h3>
         </div>
       </div>
-    </div>
+    </div>-->
 
 
     <!-- obc -->
 
-
+<!--
     <div class="container marketing">
       <div class="obc" id="obc_id">
         <h2>OnBoard Computer Subsystem </h2>
       </div>
       <!--OBC team lead and faculty coordinator-->
-      <div class = "team-leads container">
+<!--      <div class = "team-leads container">
         <div class="col-lg-6">
           <div class="profile_image">
             <img  width="200px" height="200px" class="img-rounded" alt="obc faculty" src="images/temp.jpg" >
@@ -135,7 +986,7 @@
         </div>
       </div>
         <!-- obc members -->
-      <div class="team-members container">
+<!--      <div class="team-members container">
         <div class="col-lg-4">
           <div class="profile_image">
             <img  width="150px" height="150px" class="img-rounded" alt="shubhendra" src="images/unknown-person.png" >
@@ -183,13 +1034,13 @@
 
 
 <!--- EPS -->
-
+<!--
     <div class="container marketing">
       <div class="eps" id="eps_id">
         <h2>Electrical Power Subsystem </h2>
       </div>
       <!--EPS team lead and faculty coordinator-->
-      <div class = "team-leads container">
+<!--      <div class = "team-leads container">
         <div class="col-lg-6">
           <div class="profile_image">
             <img  width="200px" height="200px" class="img-rounded" alt="eps faculty" src="images/unknown-person.png" >
@@ -206,7 +1057,7 @@
         </div>
       </div>
         <!-- eps members -->
-      <div class="team-members container">
+<!--      <div class="team-members container">
         <div class="col-lg-4">
           <div class="profile_image">
             <img  width="150px" height="150px" class="img-rounded" alt="abhinav" src="images/eps/abhinav_sundhar_eps_1.jpg" >
@@ -230,13 +1081,13 @@
 <!-- ADCS -->
 
 
-    <div class="container marketing">
+<!--    <div class="container marketing">
     <!-- adcs title-->
-      <div class="adcs" id="adcs_id">
+<!--      <div class="adcs" id="adcs_id">
         <h2>Attitude Determination and COntrol Subsystem </h2>
       </div>
       <!--ADCS team lead and faculty coordinator-->
-      <div class = "team-leads container">
+<!--      <div class = "team-leads container">
         <div class="col-lg-6">
           <div class="profile_image">
             <img  width="200px" height="200px" class="img-rounded" alt="adcs faculty" src="images/unknown-person.png" >
@@ -253,7 +1104,7 @@
         </div>
       </div>
         <!-- ADCS members -->
-      <div class="team-members container">
+<!--      <div class="team-members container">
         <div class="col-lg-4">
           <div class="profile_image">
             <img  width="150px" height="150px" class="img-rounded" alt="awais" src="images/unknown-person.png" >
@@ -291,13 +1142,13 @@
 
 
 <!-- Mechanical -->
-    <div class="container marketing">
+<!--    <div class="container marketing">
     <!-- mech title-->
-      <div class="mech" id="mech_id">
+<!--      <div class="mech" id="mech_id">
         <h2>Structural And Thermal Subsystem </h2>
       </div>
       <!--MECH team lead and faculty coordinator-->
-      <div class = "team-leads container">
+<!--      <div class = "team-leads container">
         <div class="col-lg-6">
           <div class="profile_image">
             <img  width="200px" height="200px" class="img-rounded" alt="mech faculty" src="images/unknown-person.png" >
@@ -316,7 +1167,7 @@
 
         <!-- MECH members -->
 
-      <div class="team-members container">
+<!--      <div class="team-members container">
         <div class="col-lg-4">
           <div class="profile_image">
             <img  width="150px" height="150px" class="img-rounded" alt="Rajshikar" src="images/unknown-person.png" >
@@ -347,13 +1198,13 @@
 <!-- Tele-communication -->
 
 <!-- tele -->
-    <div class="container marketing">
+<!--    <div class="container marketing">
     <!-- tele title-->
-      <div class="tele" id="tele_id">
+<!--      <div class="tele" id="tele_id">
         <h2>Telecommunications and Ground Station </h2>
       </div>
       <!--TELE team lead and faculty coordinator-->
-      <div class = "team-leads container">
+<!--      <div class = "team-leads container">
         <div class="col-lg-6">
           <div class="profile_image">
             <img  width="200px" height="200px" class="img-rounded" alt="tele faculty" src="images/unknown-person.png" >
@@ -372,7 +1223,7 @@
 
         <!-- tele members -->
 
-      <div class="team-members container">
+<!--      <div class="team-members container">
         <div class="col-lg-4">
           <div class="profile_image">
             <img  width="150px" height="150px" class="img-rounded" alt="garv" src="images/tele/garv_sharma_tele_1.JPG" >
@@ -389,10 +1240,16 @@
           <h3>Gaurav Virmani</h3>
         </div>
       </div>
+      <hr class="featurette-divider">
 
+
+      <footer>
+      <p id="top" class="pull-right "><a href="#Timage" class="smoothScroll" >Top</a></p>
+        <p>&copy; A Team Anant Product </p>
+      </footer>
     </div>
 
-
+  -->
 
 
 
@@ -417,6 +1274,12 @@
     <script src="js/smoothscroll.js"></script>
     <script type="text/javascript">
       app.initialize();
+    </script>
+    <script>
+    $('#menu-toggle').click(function(){
+
+        $("#wrapper").toggleClass("toggled");
+    });
     </script>
 
   </body>

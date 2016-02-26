@@ -1,0 +1,18 @@
+body {
+  padding-bottom: 0px;
+  background-color: white;
+  background-image: url("team_cover_2.jpeg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-attachment: fixed;
+}
+
+#subsysbody {
+  padding-bottom: 0px;
+  background-color: white;
+  background-image: url("subback1.jpg");
+
+  background-repeat: no-repeat;
+  background-size: 100% 160%;
+  background-attachment: fixed;
+}

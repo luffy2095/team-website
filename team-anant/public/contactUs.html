@@ -8,10 +8,12 @@
     <meta name="author" content="">
     <link rel="icon" href="../../favicon.ico">
 
-    <title>Carousel Template for Bootstrap</title>
+    <title>Team Anant</title>
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/simpleSidebar.css" rel="stylesheet">
     <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <link href="css/ie10-viewport-bug-workaround.css" rel="stylesheet">
@@ -29,30 +31,78 @@
     <link href="css/carousel.css" rel="stylesheet">
   </head>
 <!-- NAVBAR
-================================================== -->
-  <body>
-    <div class="navbar-wrapper">
-      <div class="container">
+==================================================-->
+  <body style="margin-top:-5px">
+    <div id="wrapper" class="toggled">
+      <div id="sidebar-wrapper" style="margin-top:0px;">
+        <ul class="sidebar-nav">
+              <li class="sidebar-brand">
+                  <a href="index.html">
+                      Team Anant
+                  </a>
+              </li>
+              <li>
+                  <a href="index.html">Home</a>
+              </li>
+              <li>
+                <a href="#subsysDrop" class="dropdown-toggle" data-toggle="collapse">SubSystems<span class="caret"></span></a>
+                <div class="collapse" id="subsysDrop">
+                <a href="subSystems.html#overview" style="text-indent: 50px;" class="smoothScroll">Overview</a>
+                <a href="subSystems.html#obc" style="text-indent: 50px;" class="smoothScroll">OBC</a>
+                <a href="subSystems.html#eps" style="text-indent: 50px;" class="smoothScroll">EPS</a>
+                <a href="subSystems.html#adcs" style="text-indent: 50px;" class="smoothScroll">ADCS</a>
+                <a href="subSystems.html#mech" style="text-indent: 50px;" class="smoothScroll">MECH</a>
+                <a href="subSystems.html#tele" style="text-indent: 50px;" class="smoothScroll">TELE</a>
+                <a href="subSystems.html#payload" style="text-indent: 50px;" class="smoothScroll">PAYLOAD</a>
+                </div>
+              </li>
+              <li>
+                <a href="#teamDrop" class="dropdown-toggle" data-toggle="collapse">Team <span class="caret"></span></a>
+                <div class="collapse" id="teamDrop">
+                  <a href="team.html#Iimage" style="text-indent: 50px;" class="smoothScroll">Our Team</a>
+                  <a href="team.html#obcid" style="text-indent: 50px;" class="smoothScroll">OBC</a>
+                  <a href="team.html#epsid" style="text-indent: 50px;" class="smoothScroll">EPS</a>
+                  <a href="team.html#adcsid" style="text-indent: 50px;" class="smoothScroll">ADCS</a>
+                  <a href="team.html#mechid" style="text-indent: 50px;" class="smoothScroll">MECH</a>
+                  <a href="team.html#teleid" style="text-indent: 50px;" class="smoothScroll">TELE</a>
+                  <a href="team.html#payloadid" style="text-indent: 50px;" class="smoothScroll">PAYLOAD</a>
+                </div>
+              </li>
+              <li>
+                  <a href="sponsor.html">Sponsor</a>
+              </li>
+              <li>
+                  <a href="">ContactUs</a>
+              </li>
+        </ul>
+      </div>
+      <!--sidebar wrapper end // sidebar wrapper takes care of sidebar-->
 
-        <nav class="navbar navbar-inverse navbar-fixed-top">
-          <div class="container">
-            <div class="navbar-header">
-              <a class="navbar-brand" href="index.html">Team Anant</a>
-            </div>
-            <div id="navbar" class="navbar-collapse collapse">
-              <ul class="nav navbar-nav">
-                <li id="index" ><a href="index.html" class="smoothScroll" >Home</a></li>
-                <li id="subsystem"><a href="subSystems.html" class="smoothScroll">SubSystems</a></li>
-                <li id="team"><a href="team.html">Team</a></li>
-                <li id="Donate"><a href="donate.html">Donate</a></li>
-                <li id="contactUs" class="active"><a href="#">ContactUs</a></li>
-              </ul>
-            </div>
-          </div>
-        </nav>
+<!-- page content wrapper start ## any content in the page should go in this wrapper-->
 
+      <div id="page-content-wrapper">
+        <div class="container-fluid pull-left">
+          <a href="#menu-toggle" class="btn btn-default" style="position:fixed;" id="menu-toggle"><i class="glyphicon glyphicon-th-list"></i></a>
+        </div>
+        <iframe style="padding-left:-15px;"src="https://docs.google.com/forms/d/1c7SJeZBQ6IcMCht8817pA35lCUlYJqKgDFk_J3VGQrM/viewform?embedded=true" width="110%" height="950px" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+        <footer>
+          <p style="color:black;font-weight:bold;font-size:20px;text-align:center;">&copy; A Team Anant Product </p>
+        </footer>
       </div>
     </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
     <script src="js/bootstrap.min.js"></script>
@@ -69,6 +119,13 @@
     <script src="js/smoothscroll.js"></script>
     <script type="text/javascript">
       app.initialize();
+    </script>
+    <script>
+    $('#menu-toggle').click(function(){
+
+        $("#wrapper").toggleClass("toggled");
+    });
+
     </script>
   </body>
 

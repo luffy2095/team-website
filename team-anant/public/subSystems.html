@@ -12,6 +12,9 @@
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/bootstrap.css">
+    <link href="css/simpleSidebar.css" rel="stylesheet">
+    <link href="css/parallax.css" rel="stylesheet">
     <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <link href="css/ie10-viewport-bug-workaround.css" rel="stylesheet">
@@ -21,6 +24,9 @@
     <script src="js/bootstrap.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/npm.js"></script>
+    <script type="text/javascript" src="js/para.js">
+
+    </script>
 
 
 
@@ -30,138 +36,281 @@
   </head>
 <!-- NAVBAR
 ================================================== -->
-  <body>
-    <div class="navbar-wrapper">
-      <div class="container">
+  <body id="subsysbody">
+      <!-- Sidebar -->
+    <div id="wrapper" class="toggled">
+      <div id="sidebar-wrapper" style="background-color:rgba(125,125,125,0.3);">
+        <div class="container-fluid pull-left">
+          <a href="#menu-toggle" class="btn btn-default" style="position:fixed;margin-top:-45px;" id="menu-toggle"><i class="glyphicon glyphicon-th-list"></i></a>
+        </div>
 
-        <nav class="navbar navbar-inverse navbar-fixed-top">
-          <div class="container">
-            <div class="navbar-header">
-              <a class="navbar-brand" href="index.html">Team Anant</a>
+        <ul class="sidebar-nav">
+              <li class="sidebar-brand">
+                  <a href="index.html">
+                      Team Anant
+                  </a>
+              </li>
+              <li>
+                  <a href="index.html">Home</a>
+              </li>
+              <li id="hideteam">
+                <a href="#subsysDrop" class="dropdown-toggle" data-toggle="collapse">SubSystems<span class="caret"></span></a>
+                <div class="collapse" id="subsysDrop">
+                <a href="" style="text-indent: 50px;" class="smoothScroll">Overview</a>
+                <a href="#obc" style="text-indent: 50px;" class="smoothScroll">OBC</a>
+                <a href="#eps" style="text-indent: 50px;" class="smoothScroll">EPS</a>
+                <a href="#adcs" style="text-indent: 50px;" class="smoothScroll">ADCS</a>
+                <a href="#mech" style="text-indent: 50px;" class="smoothScroll">MECH</a>
+                <a href="#tele" style="text-indent: 50px;" class="smoothScroll">TELE</a>
+                <a href="#payload" style="text-indent: 50px;" class="smoothScroll">PAYLOAD</a>
+                </div>
+              </li>
+              <li id="hideSub">
+                <a href="#teamDrop" class="dropdown-toggle" data-toggle="collapse">Team <span class="caret"></span></a>
+                <div class="collapse" id="teamDrop">
+                  <a href="team.html#Iimage" style="text-indent: 50px;" class="smoothScroll">Our Team</a>
+                  <a href="team.html#obcid" style="text-indent: 50px;" class="smoothScroll">OBC</a>
+                  <a href="team.html#epsid" style="text-indent: 50px;" class="smoothScroll">EPS</a>
+                  <a href="team.html#adcsid" style="text-indent: 50px;" class="smoothScroll">ADCS</a>
+                  <a href="team.html#mechid" style="text-indent: 50px;" class="smoothScroll">MECH</a>
+                  <a href="team.html#teleid" style="text-indent: 50px;" class="smoothScroll">TELE</a>
+                  <a href="team.html#payloadid" style="text-indent: 50px;" class="smoothScroll">PAYLOAD</a>
+                </div>
+              </li>
+              <li>
+                  <a href="sponsor.html">Sponsor</a>
+              </li>
+              <li>
+                  <a href="contactUs.html">ContactUs</a>
+              </li>
+        </ul>
+      </div>
+      <!--sidebar wrapper end // sidebar wrapper takes care of sidebar-->
+
+<!-- page content wrapper start ## any content in the page should go in this wrapper-->
+
+      <div id="page-content-wrapper">
+      <!--  <div class="container-fluid pull-left">
+          <a href="#menu-toggle" class="btn btn-default" style="position:fixed;" id="menu-toggle"><i class="glyphicon glyphicon-th-list"></i></a>
+        </div>-->
+
+<!--###############################################################33-->
+        <div class="container marketing" >
+
+          <!-- START THE FEATURETTES -->
+
+          <hr class="featurette-divider" id="overview">
+
+          <!-- START THE overview FEATURETTES -->
+
+          <div class="row featurette" style="background-color:rgba(125,125,125,0.7)">
+            <div class="col-md-7">,
+              <h2 class="featurette-heading" style="color:black;text-align:left;">System Overview</h2>
+              <p class="lead" style="color:black;text-align:justify;text-indent;50px;">Donec ullamcorper nulla non metuauctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
             </div>
-            <div id="navbar" class="navbar-collapse collapse">
-              <ul class="nav navbar-nav">
-                <li id="index" ><a href="index.html" class="smoothScroll" >Home</a></li>
-
-
-
-                <li class="dropdown active">
-                  <a class="dropdown-toggle" data-toggle="dropdown" role="button" href="#">SubSystems<span class="caret"></span></a>
-                  <ul class="dropdown-menu">
-                    <li class="active" ><a href="#">Overview</a></li>
-                    <li><a href="#obc" class="smoothScroll">OBC</a></li>
-                    <li><a href="#eps" class="smoothScroll">EPS</a></li>
-                    <li><a href="#adcs" class="smoothScroll">ADCS</a></li>
-                    <li><a href="#tele" class="smoothScroll">TELE</a></li>
-                    <li><a href="#mech" class="smoothScroll">MECH</a></li>
-                    <li><a href="#payload" class="smoothScroll">PAYLOAD</a></li>
-
-                  </ul>
-                </li>
-                <li id="team"><a href="team.html">Team</a></li>
-                <li id="Donate"><a href="donate.html">Donate</a></li>
-                <li id="contactUs"><a href="contactUs.html">ContactUs</a></li>
-              </ul>
+            <div class="col-md-5">
+              <img class="featurette-image img-responsive center-block" style="margin-top:50px;margin-bottom:70px;"data-src="holder.js/500x500/auto" alt="Generic placeholder image" src="images/system.jpg">
             </div>
           </div>
-        </nav>
 
+          <!-- END THE  over view FEATURETTES -->
+
+          <hr class="featurette-divider" id="obc">
+
+
+          <!-- START THE OBC FEATURETTES -->
+          <div class="row featurette" style="background-color:rgba(125,125,125,0.7)">
+            <div class="col-md-7 col-md-push-5">
+              <h2 class="featurette-heading" style="color:black;text-align:left;">OnBoard Computer Subsystem</h2>
+              <p class="lead" style="color:black;text-align:justify;text-indent:50px;">
+                The On-Board Computer is responsible for controlling and coordinating the tasks
+                of all the other subsystems of the satellite. The compression of the hyperspectral
+                image also comes under its purview. It changes the satellite's mode of operation
+                based on various parameters which are used to monitor the its status.
+              </p>
+            </div>
+            <div class="col-md-5 col-md-pull-7">
+              <img class="featurette-image img-responsive center-block" style="margin-top:50px;margin-bottom:70px;"data-src="holder.js/500x500/auto" alt="Generic placeholder image" src="images/unknown-person.png">
+            </div>
+          </div>
+
+
+          <!-- END THE OBC FEATURETTES -->
+
+          <hr class="featurette-divider" id="eps">
+
+          <!-- START THE EPS FEATURETTES -->
+
+          <div class="row featurette"style="background-color:rgba(125,125,125,0.7)">
+            <div class="col-md-7">
+              <h2 class="featurette-heading" style="color:black;text-align:left;">Electical Power Subsystem </h2>
+              <p class="lead"  style="color:black;text-align:justify;text-indent:50px;">
+                Electrical Power System is responsible for harnessing energy from the solar panels, storing extra power
+
+                in the batteries and conditioning it to supply different subsystems with necessary voltages and currents
+
+                with required precision. Since, all of satellites functionality depends on it, robustness and redundancy is
+
+                the dominating characteristic while designing an Electrical Power System. Apart from these primary
+
+                functions, it is also responsible for protecting components from electrical spikes caused by space effects
+
+                like Single Event Upsets (SEUs) caused by solar flares or radiation from Van Allen Belt. Since EPS is the
+
+                first subsystem to be turned on after the satellite, it is also responsible for booting up OBC.
+
+              </p>
+              <p class="lead" style="color:black;text-align:justify;text-indent:50px;">Our satellite has a hyperspectral camera, an intensive processor and huge amount of data to be
+
+                transferred making effective management of energy a categorical priority.
+
+              </p>
+            </div>
+            <div class="col-md-5">
+              <img class="featurette-image img-responsive center-block" style="margin-top:25%;margin-bottom:70px;"data-src="holder.js/500x500/auto" alt="Generic placeholder image" src="images/unknown-person.png">
+            </div>
+          </div>
+
+          <!-- END THE eps FEATURETTES -->
+
+          <hr class="featurette-divider" id="adcs">
+
+          <!-- START THE adcs FEATURETTES -->
+
+          <div class="row featurette" style="background-color:rgba(125,125,125,0.7)">
+            <div class="col-md-7 col-md-push-5">
+              <h2 class="featurette-heading"  style="color:black;text-align:left;">Attitude Determination And Control Subsystem</h2>
+              <p class="lead"  style="color:black;text-align:justify;text-indent:50px;">
+                 The Attitude Determination and Control System (ADCS) has the crucial job of
+                 controlling and stabilizing the satellite against external disturbances. It
+                 works with a set of inertial and reference sensors along with actuators like
+                 reaction wheels and magnetorquers to maintain the angular velocity of the satellite.
+                 It also performs various maneuvers for maximum sunlight tracking and other mission
+                 requirements like, ground station tracking for maximum communication and camera
+                 pointing for image acquisition
+
+              </p>
+            </div>
+            <div class="col-md-5 col-md-pull-7">
+              <img class="featurette-image img-responsive center-block" style="margin-top:50px;margin-bottom:70px;"data-src="holder.js/500x500/auto" alt="Generic placeholder image" src="images/unknown-person.png">
+            </div>
+          </div>
+
+          <!-- END THE adcs FEATURETTES -->
+
+          <hr class="featurette-divider" id="mech">
+
+          <!-- START THE mech FEATURETTES -->
+
+          <div class="row featurette" style="background-color:rgba(125,125,125,0.7)">
+            <div class="col-md-7">
+              <h2 class="featurette-heading"  style="color:black;text-align:left;">Structural And Thermal Subsystem</h2>
+              <p class="lead"  style="color:black;text-align:justify;text-indent:50px;">
+                The structural subsystem deals with the design and analysis of the main structure of the satellite, by
+
+                proper allocation of dimensions and space to other subsystem components, keeping in mind the
+
+                constraints each of them poses. It plays an important role during launch as it has to withstand the static
+
+                and dynamic loading and the vibrations induced. It also protects the internal components against the
+
+                harsh space environment in orbit. The dimensions and weight of the hyperspectral imaging payload,
+
+                makes the design of the satellite a challenge to keep it within the constraints as specified by NASA.
+              </p>
+              <p class="lead"  style="color:black;text-align:justify;text-indent:50px;">
+                The thermal subsystem is responsible for maintaining the temperature of the components within their
+
+                specified operational limits. The temperature control in our satellite is achieved mostly by using passive
+
+                methods, such as Multi Layered Insulation (MLI), surface finishes, paints, etc., with an active thermal
+
+                control using heaters for the battery as it is the most temperature sensitive component.
+              </p>
+            </div>
+            <div class="col-md-5">
+              <img class="featurette-image img-responsive center-block" style="margin-top:25%;margin-bottom:70px;"data-src="holder.js/500x500/auto" alt="Generic placeholder image" src="images/structural.jpg">
+            </div>
+          </div>
+
+          <!-- END THE mech FEATURETTES -->
+
+          <hr class="featurette-divider" id="tele">
+
+          <!-- START THE tele FEATURETTES -->
+
+
+          <div class="row featurette" style="background-color:rgba(125,125,125,0.7)">
+            <div class="col-md-7 col-md-push-5">
+              <h2 class="featurette-heading"  style="color:black;text-align:left;">Telecommunication and<br> Ground Station</h2>
+              <p  class="lead" style="color:black;text-align:justify;text-indent:25px;">“Never let a satellite go incommunicado” is the motto around which the communications team works.
+
+                The system is responsible for setting up a reliable connection between the satellite and the ground
+
+                station in the UHF and VHF amateur bands. It consists of a beacon and a data telemetry system. The
+
+                beacon basically advertises its humble existence to the world and is used for transmitting some mission
+
+                critical data (some of the housekeeping data). The data downlinking system is tasked with transmitting
+
+                the payload data and all the housekeeping data. Along with this, the telemetry system receives
+
+                commands and updates sent from the ground station. The ground station server will run a software for
+
+                tracking the satellite and control a rotor accordingly, to orient the antennae. The client connected to the
+
+                server will be able to remotely operate it.</p>
+
+                <p  class="lead" style="color:black;text-align:justify;text-indent:25px;">
+                A good number of satellites have been launched which have successfully established connections with
+
+                the ground station. Well, here’s the rub in our case. Firstly, the size of a hyperspectral image is
+
+                unconventionally large to be transmitted from a nanosatellite. Secondly, owing to the low earth orbit
+
+                into which the satellite will be deployed, each satellite pass will last for about 6-9 minutes and there will
+
+                be about 3 passes a day. This calls for a high data rate of transmission which in turn increases power
+
+                consumption, increases the bandwidth occupancy and decreases the reliability of connection.
+              </p>
+            </div>
+            <div class="col-md-5 col-md-pull-7">
+              <img class="featurette-image img-responsive center-block" style="margin-top:35%;margin-bottom:70px;"data-src="holder.js/500x500/auto" alt="Generic placeholder image" src="images/SATCOM_Final.jpg">
+            </div>
+          </div>
+
+          <!-- END THE tele FEATURETTES -->
+
+          <hr class="featurette-divider" id="payload">
+
+          <!-- START THE payload FEATURETTES -->
+
+          <div class="row featurette" style="background-color:rgba(125,125,125,0.7)">
+            <div class="col-md-7">
+              <h2 class="featurette-heading" style="color:black;">Payload Subsystem</h2>
+              <p class="lead"  style="color:black;">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+            </div>
+            <div class="col-md-5">
+              <img class="featurette-image img-responsive center-block" style="margin-top:50px;margin-bottom:70px;"data-src="holder.js/500x500/auto" alt="Generic placeholder image" src="images/unknown-person.png">
+            </div>
+          </div>
+          <hr class="featurette-divider">
+
+          <!-- END THE payload FEATURETTES -->
+
+          <footer>
+          <p id="top" class="pull-right "><a href="#overview" class="smoothScroll" style="color:red;font-weight:bold;font-size:20px;">Top</a></p>
+            <p style="color:black;font-weight:bold;font-size:20px;">&copy; A Team Anant Product </p>
+          </footer>
+
+
+        </div>
       </div>
+      <!--page content wrapper end-->
     </div>
-
-<!--- #####################################333-->
-    <div class="container marketing" >
-
-      <!-- START THE FEATURETTES -->
-
-      <hr class="featurette-divider" id="overview">
-
-      <div class="row featurette">
-        <div class="col-md-7">
-          <h2 class="featurette-heading">System Overview</h2>
-          <p class="lead">Donec ullamcorper nulla non metuauctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-        </div>
-        <div class="col-md-5">
-          <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="Generic placeholder image" src="images/unknown-person.png">
-        </div>
-      </div>
-
-      <hr class="featurette-divider" id="obc">
-
-      <div class="row featurette">
-        <div class="col-md-7 col-md-push-5">
-          <h2 class="featurette-heading">OnBoard Computer Subsystem <span class="text-muted">See for yourself.</span></h2>
-          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-        </div>
-        <div class="col-md-5 col-md-pull-7">
-          <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
-        </div>
-      </div>
-
-      <hr class="featurette-divider" id="eps">
-
-      <div class="row featurette">
-        <div class="col-md-7">
-          <h2 class="featurette-heading">Electical Power Subsystem <span class="text-muted">Checkmate.</span></h2>
-          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-        </div>
-        <div class="col-md-5">
-          <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
-        </div>
-      </div>
-
-      <hr class="featurette-divider" id="adcs">
-
-      <div class="row featurette">
-        <div class="col-md-7 col-md-push-5">
-          <h2 class="featurette-heading">Attitude Determination And Control Subsystem <span class="text-muted">See for yourself.</span></h2>
-          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-        </div>
-        <div class="col-md-5 col-md-pull-7">
-          <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
-        </div>
-      </div>
-
-      <hr class="featurette-divider" id="mech">
-
-      <div class="row featurette">
-        <div class="col-md-7">
-          <h2 class="featurette-heading">Structural And Thermal Subsystem<span class="text-muted">Checkmate.</span></h2>
-          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-        </div>
-        <div class="col-md-5">
-          <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
-        </div>
-      </div>
-
-      <hr class="featurette-divider" id="tele">
-
-
-      <div class="row featurette">
-        <div class="col-md-7 col-md-push-5">
-          <h2 class="featurette-heading">Telecommuication and Ground Station <span class="text-muted">See for yourself.</span></h2>
-          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-        </div>
-        <div class="col-md-5 col-md-pull-7">
-          <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
-        </div>
-      </div>
-
-      <hr class="featurette-divider" id="payload">
-
-      <div class="row featurette">
-        <div class="col-md-7">
-          <h2 class="featurette-heading">Payload Subsystem<span class="text-muted">Checkmate.</span></h2>
-          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-        </div>
-        <div class="col-md-5">
-          <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
-        </div>
-      </div>
-      <hr class="featurette-divider">
-    </div>
-
-
+     <!-- main wrapper end-->
+  <!--- #####################################333-->
 
 
 
@@ -182,9 +331,31 @@
     <script type="text/javascript" src="test.js" >
     </script>
     <script src="js/smoothscroll.js"></script>
+    <script src="js/para.js"></script>
     <script type="text/javascript">
       app.initialize();
     </script>
+    <script>
+    $('#menu-toggle').click(function(){
+
+        $("#wrapper").toggleClass("toggled");
+    });
+    </script>
+
+    <script >
+
+    $('#hideSub').on('click',function(evt){
+        $('.collapse').collapse('hide');
+        })
+    </script>
+    <script type="text/javascript">
+    $('body').parallax({
+      speed : 0.05
+      });
+    </script>
+
+
+
   </body>
 
 </html>
