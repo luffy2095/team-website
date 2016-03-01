@@ -4,88 +4,86 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" href="images/icon1.ico">
-
     <title>Team Anant</title>
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="/css/bootstrap.css">
-    <link href="css/simpleSidebar.css" rel="stylesheet">
-    <link href="css/parallax.css" rel="stylesheet">
-    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet'  type='text/css'>
+
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <link href="css/ie10-viewport-bug-workaround.css" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/simpleSidebar.css">
+    <link rel="stylesheet" href="css/parallax.css">
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
     <script src="js/ie-emulation-modes-warning.js"></script>
     <script src="js/bootstrap.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/npm.js"></script>
-    <script type="text/javascript" src="js/para.js">
 
-    </script>
-
-
-
-
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/jquery-1.12.1.min.js"><\/script>')</script>
     <!-- Custom styles for this template -->
     <link href="css/carousel.css" rel="stylesheet">
   </head>
+
 <!-- NAVBAR
 ================================================== -->
   <body id="subsysbody">
       <!-- Sidebar -->
-    <div id="wrapper" class="toggled">
-      <div id="sidebar-wrapper" style="background-color:rgba(125,125,125,0.3);">
-        <div class="container-fluid pull-left">
-          <a href="#menu-toggle" class="btn btn-default" style="position:fixed;margin-top:-45px;" id="menu-toggle"><i class="glyphicon glyphicon-th-list"></i></a>
-        </div>
+      <div id="wrapper" class="toggled">
 
-        <ul class="sidebar-nav">
-              <li class="sidebar-brand">
-                  <a href="index.html">
-                      Team Anant
-                  </a>
-              </li>
-              <li>
-                  <a href="index.html">Home</a>
-              </li>
-              <li id="hideteam">
-                <a href="#subsysDrop" class="dropdown-toggle" data-toggle="collapse">SubSystems<span class="caret"></span></a>
-                <div class="collapse" id="subsysDrop">
-                <a href="" style="text-indent: 50px;" class="smoothScroll">Overview</a>
-                <a href="#obc" style="text-indent: 50px;" class="smoothScroll">OBC</a>
-                <a href="#eps" style="text-indent: 50px;" class="smoothScroll">EPS</a>
-                <a href="#adcs" style="text-indent: 50px;" class="smoothScroll">ADCS</a>
-                <a href="#mech" style="text-indent: 50px;" class="smoothScroll">MECH</a>
-                <a href="#tele" style="text-indent: 50px;" class="smoothScroll">TELE</a>
-                <a href="#payload" style="text-indent: 50px;" class="smoothScroll">PAYLOAD</a>
-                </div>
-              </li>
-              <li id="hideSub">
-                <a href="#teamDrop" class="dropdown-toggle" data-toggle="collapse">Team <span class="caret"></span></a>
-                <div class="collapse" id="teamDrop">
-                  <a href="team.html#Iimage" style="text-indent: 50px;" class="smoothScroll">Our Team</a>
-                  <a href="team.html#obcid" style="text-indent: 50px;" class="smoothScroll">OBC</a>
-                  <a href="team.html#epsid" style="text-indent: 50px;" class="smoothScroll">EPS</a>
-                  <a href="team.html#adcsid" style="text-indent: 50px;" class="smoothScroll">ADCS</a>
-                  <a href="team.html#mechid" style="text-indent: 50px;" class="smoothScroll">MECH</a>
-                  <a href="team.html#teleid" style="text-indent: 50px;" class="smoothScroll">TELE</a>
-                  <a href="team.html#payloadid" style="text-indent: 50px;" class="smoothScroll">PAYLOAD</a>
-                </div>
-              </li>
-              <li>
-                  <a href="sponsor.html">Sponsor</a>
-              </li>
-              <li>
-                  <a href="contactUs.html">ContactUs</a>
-              </li>
-        </ul>
-      </div>
+        <div id="sidebar-wrapper" style="background-color: rgba(255, 255, 255, 0.1);">
+          <div class="container-fluid pull-left">
+            <a href="#menu-toggle" class="btn btn-default" style="position:fixed;margin-top:-45px;" id="menu-toggle"><i class="glyphicon glyphicon-th-list"></i></a>
+          </div>
+          <ul class="sidebar-nav">
+                <li class="sidebar-brand">
+                    <a href="index.html">
+                        Team Anant
+                    </a>
+                </li>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li >
+                  <a href="#subsysDrop" id="hideteam" class="dropdown-toggle" data-toggle="collapse">SubSystems<span class="caret"></span></a>
+                  <div class="collapse" id="subsysDrop">
+                  <a href="subSystems.html#overview" style="text-indent: 50px;" class="smoothScroll">Overview</a>
+                  <a href="subSystems.html#obc" style="text-indent: 50px;" class="smoothScroll">OBC</a>
+                  <a href="subSystems.html#eps" style="text-indent: 50px;" class="smoothScroll">EPS</a>
+                  <a href="subSystems.html#adcs" style="text-indent: 50px;" class="smoothScroll">ADCS</a>
+                  <a href="subSystems.html#mech" style="text-indent: 50px;" class="smoothScroll">MECH</a>
+                  <a href="subSystems.html#tele" style="text-indent: 50px;" class="smoothScroll">TELE</a>
+                  <a href="subSystems.html#payload" style="text-indent: 50px;" class="smoothScroll">PAYLOAD</a>
+                  </div>
+                </li>
+                <li >
+                  <a href="#teamDrop" id="hideSub" class="dropdown-toggle" data-toggle="collapse">Team <span class="caret"></span></a>
+                  <div class="collapse" id="teamDrop">
+                    <a href="team.html#Iimage" style="text-indent: 50px;" class="smoothScroll">Our Team</a>
+                    <a href="team.html#obcid" style="text-indent: 50px;" class="smoothScroll">OBC</a>
+                    <a href="team.html#epsid" style="text-indent: 50px;" class="smoothScroll">EPS</a>
+                    <a href="team.html#adcsid" style="text-indent: 50px;" class="smoothScroll">ADCS</a>
+                    <a href="team.html#mechid" style="text-indent: 50px;" class="smoothScroll">MECH</a>
+                    <a href="team.html#teleid" style="text-indent: 50px;" class="smoothScroll">TELE</a>
+                    <a href="team.html#payloadid" style="text-indent: 50px;" class="smoothScroll">PAYLOAD</a>
+                  </div>
+                </li>
+                <li>
+                    <a href="sponsor.html">Sponsor</a>
+                </li>
+                <li>
+                    <a href="contactUs.html">ContactUs</a>
+                </li>
+          </ul>
+        </div>
       <!--sidebar wrapper end // sidebar wrapper takes care of sidebar-->
 
 <!-- page content wrapper start ## any content in the page should go in this wrapper-->
@@ -104,10 +102,10 @@
 
           <!-- START THE overview FEATURETTES -->
 
-          <div class="row featurette" style="background-color:rgba(125,125,125,0.7)">
+          <div class="row featurette" style="background-color:rgba(125,125,125,0.9)">
             <div class="col-md-7">,
               <h2 class="featurette-heading" style="color:black;text-align:left;">System Overview</h2>
-              <p class="lead" style="color:black;text-align:justify;text-indent;50px;">The satellite performs its functions due to combined functioning of various subsystems. Each subsystem specializes in certain function of satellite. Our satellite system is distributed, with different subsystems commuicating with each-other via buses. With OBC being the brain and EPS being the power house, different subsystems perform their function as defined in the flightplan or when directed by OBC. ADCS ensures stability of the satellite while structural subsystem defines the physical body of the satellite. Telecommunications subsystem is responsible for the contact with ground station. Payload subsystem consists of experimental equipment abord the satellite.</p>
+              <p class="lead" style="color:black;text-align:justify;text-indent;50px;">The satellite performs its functions due to combined functioning of various subsystems. Each subsystem specializes in a certain function of the satellite. Our satellite system is distributed, with different subsystems communicating with each-other via buses. With OBC being the brain and EPS being the power house, different subsystems perform their function as defined in the flightplan or when directed by OBC. ADCS ensures stability of the satellite while structural subsystem defines the physical body of the satellite. Telecommunications subsystem is responsible for the contact with ground station. Payload subsystem consists of experimental equipment aboard the satellite.</p>
             </div>
             <div class="col-md-5">
               <img class="featurette-image img-responsive center-block" style="margin-top:50px;margin-bottom:70px;"data-src="holder.js/500x500/auto" alt="Generic placeholder image" src="images/system.jpg">
@@ -120,14 +118,11 @@
 
 
           <!-- START THE OBC FEATURETTES -->
-          <div class="row featurette" style="background-color:rgba(125,125,125,0.7)">
+          <div class="row featurette" style="background-color:rgba(125,125,125,0.9)">
             <div class="col-md-7 col-md-push-5">
               <h2 class="featurette-heading" style="color:black;text-align:left;">OnBoard Computer Subsystem</h2>
               <p class="lead" style="color:black;text-align:justify;text-indent:50px;">
-                The On-Board Computer is responsible for controlling and coordinating the tasks
-                of all the other subsystems of the satellite. The compression of the hyperspectral
-                image also comes under its purview. It changes the satellite's mode of operation
-                based on various parameters which are used to monitor the its status.
+                The On Board Computer is the main string puller, controlling and coordinating all the other subsystems on the satellite. It regularly collects various housekeeping data from the other subsystems and accordingly switches between various modes of operation. The OBC in our case has a System-on-Chip based design, consisting of an FPGA and microprocessor. An SoC being inherently efficient, meets the power requirements associated with a nanosatellite. While the microprocessor will be busy coordinating among the subsystems, the hyperspectral image compression algorithm will be implemented on the FPGA. A hyperspectral image compression algorithm is required because of the large sizes of hyperspectral images and the constraint placed on the telemetry subsystem in terms of transferring huge amounts of data. 
               </p>
             </div>
             <div class="col-md-5 col-md-pull-7">
@@ -142,7 +137,7 @@
 
           <!-- START THE EPS FEATURETTES -->
 
-          <div class="row featurette"style="background-color:rgba(125,125,125,0.7)">
+          <div class="row featurette"style="background-color:rgba(125,125,125,0.9)">
             <div class="col-md-7">
               <h2 class="featurette-heading" style="color:black;text-align:left;">Electical Power Subsystem </h2>
               <p class="lead"  style="color:black;text-align:justify;text-indent:50px;">
@@ -168,7 +163,7 @@
               </p>
             </div>
             <div class="col-md-5">
-              <img class="featurette-image img-responsive center-block" style="margin-top:25%;margin-bottom:70px;"data-src="holder.js/500x500/auto" alt="Generic placeholder image" src="images/unknown-person.png">
+              <img class="featurette-image img-responsive center-block" style="margin-top:25%;margin-bottom:70px;"data-src="holder.js/500x500/auto" alt="Generic placeholder image" src="images/eps.jpg">
             </div>
           </div>
 
@@ -178,22 +173,36 @@
 
           <!-- START THE adcs FEATURETTES -->
 
-          <div class="row featurette" style="background-color:rgba(125,125,125,0.7)">
+          <div class="row featurette" style="background-color:rgba(125,125,125,0.9)">
             <div class="col-md-7 col-md-push-5">
               <h2 class="featurette-heading"  style="color:black;text-align:left;">Attitude Determination And Control Subsystem</h2>
               <p class="lead"  style="color:black;text-align:justify;text-indent:50px;">
-                 The Attitude Determination and Control System (ADCS) has the crucial job of
-                 controlling and stabilizing the satellite against external disturbances. It
-                 works with a set of inertial and reference sensors along with actuators like
-                 reaction wheels and magnetorquers to maintain the angular velocity of the satellite.
-                 It also performs various maneuvers for maximum sunlight tracking and other mission
-                 requirements like, ground station tracking for maximum communication and camera
-                 pointing for image acquisition
+                The Attitude Determination and Control System (ADCS) has the crucial job of controlling and stabilizing
 
+                the satellite against external disturbances. It also has to perform various maneuvers to point the
+
+                maximum surface area towards the sun, or to track the ground station for communication purposes or
+
+                even actively stabilize the satellite while taking the images of the earth.
+              </p>
+
+              <p class="lead"  style="color:black;text-align:justify;text-indent:50px;">The system can further be divided into two subsystems – the attitude determination system (ADS) and
+
+                the attitude control system (ACS). The ADS consists of the sunsensors and magnetometers as reference
+
+                sensors and an IMU as an inertial sensor to obtain the attitude knowledge using EQUEST and EKF as
+
+                determination and estimation algorithms. The magnetorquers will be used to detumble the satellite as a
+
+                part of ACS. The reaction wheels along with the magnetorquers will be used for advanced control
+
+                algorithms to actively orient and control the satellite during image acquisition, communication and sun
+
+                tracking.
               </p>
             </div>
             <div class="col-md-5 col-md-pull-7">
-              <img class="featurette-image img-responsive center-block" style="margin-top:50px;margin-bottom:70px;"data-src="holder.js/500x500/auto" alt="Generic placeholder image" src="images/unknown-person.png">
+              <img class="featurette-image img-responsive center-block" style="margin-top:35%;margin-bottom:70px;"data-src="holder.js/500x500/auto" alt="Generic placeholder image" src="images/ADCS1.jpg">
             </div>
           </div>
 
@@ -203,7 +212,7 @@
 
           <!-- START THE mech FEATURETTES -->
 
-          <div class="row featurette" style="background-color:rgba(125,125,125,0.7)">
+          <div class="row featurette" style="background-color:rgba(125,125,125,0.9)">
             <div class="col-md-7">
               <h2 class="featurette-heading"  style="color:black;text-align:left;">Structural And Thermal Subsystem</h2>
               <p class="lead"  style="color:black;text-align:justify;text-indent:50px;">
@@ -241,7 +250,7 @@
           <!-- START THE tele FEATURETTES -->
 
 
-          <div class="row featurette" style="background-color:rgba(125,125,125,0.7)">
+          <div class="row featurette" style="background-color:rgba(125,125,125,0.9)">
             <div class="col-md-7 col-md-push-5">
               <h2 class="featurette-heading"  style="color:black;text-align:left;">Telecommunication and<br> Ground Station</h2>
               <p  class="lead" style="color:black;text-align:justify;text-indent:25px;">“Never let a satellite go incommunicado” is the motto around which the communications team works.
@@ -287,13 +296,43 @@
 
           <!-- START THE payload FEATURETTES -->
 
-          <div class="row featurette" style="background-color:rgba(125,125,125,0.7)">
+          <div class="row featurette" style="background-color:rgba(125,125,125,0.9)">
             <div class="col-md-7">
               <h2 class="featurette-heading" style="color:black;">Payload Subsystem</h2>
-              <p class="lead"  style="color:black;">The primary payload is a Hyperspectral camera which is yet to be used as a payload for nanosatellites due to its conventional models requiring intensive power and processing capabilities.The Data from the payload would used for water quality monitoring in the region.</p>
+              <p class="lead"  style="color:black;text-align:justify;text-indent:25px;">Hyperspectral remote sensing, also known as imaging spectroscopy, is a relatively new technology that
+
+                is currently being investigated by researchers and scientists with regard to the detection and
+
+                identification of minerals, terrestrial vegetation, and man-made materials and backgrounds. The primary
+
+                payload of our satellite is a hyperspectral camera which is yet to be used as a payload for nanosatellites
+
+                due to its conventional models requiring intensive power and processing capabilities.
+              </p>
+
+                <p class="lead"  style="color:black;text-align:justify;text-indent:25px;">Hyperspectral imaging provides a great amount of spectral information to identify and distinguish
+
+                  between different spectrally similar materials. It has a potential of more accurate and more detailed
+
+                  information extraction than what is possible with other types of remotely sensed data. The camera
+
+                  captures a part of the electromagnetic spectrum from 400-1000nm (visible – near infrared).  The
+
+                  camera’s concentric design spectrometer with very fine resolution helps the existing solid state imaging
+
+                  technology to take images from the wavebands which were previously not possible on a single platform.
+
+                  The data from the payload will be used for water quality monitoring in the region. It will take the images
+
+                  in different wavebands and after different levels of processing it will be able to provide the
+
+                  concentrations of different materials such as TSS (Total Suspended Solids) and chlorophyll-a, diffuse
+
+                  attenuation coefficient, etc.
+                </p>
             </div>
             <div class="col-md-5">
-              <img class="featurette-image img-responsive center-block" style="margin-top:50px;margin-bottom:70px;"data-src="holder.js/500x500/auto" alt="Generic placeholder image" src="images/unknown-person.png">
+              <img class="featurette-image img-responsive center-block" style="margin-top:35%;margin-bottom:70px;"data-src="holder.js/500x500/auto" alt="Generic placeholder image" src="images/Payload1.jpg">
             </div>
           </div>
           <hr class="featurette-divider">
@@ -323,15 +362,14 @@
 <!-- core bootstrap javascript-->
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script>window.jQuery || document.write('<script src="js/jquery-1.12.1.min.js"><\/script>')</script>
     <script src="js/bootstrap.min.js"></script>
     <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
     <script src="js/vendor/holder.min.js"></script>
+    <script src="js/smoothscroll.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="js/ie10-viewport-bug-workaround.js"></script>
-    <script type="text/javascript" src="test.js" >
-    </script>
-    <script src="js/smoothscroll.js"></script>
+    <script src="test.js"></script>
     <script src="js/para.js"></script>
     <script type="text/javascript">
       app.initialize();
@@ -341,12 +379,18 @@
 
         $("#wrapper").toggleClass("toggled");
     });
-    </script>
 
+    </script>
+    <script >
+
+    $('#hideteam').on('click',function(evt){
+        $('#teamDrop').collapse('hide');
+        })
+    </script>
     <script >
 
     $('#hideSub').on('click',function(evt){
-        $('.collapse').collapse('hide');
+        $('#subsysDrop').collapse('hide');
         })
     </script>
     <script type="text/javascript">
@@ -355,8 +399,5 @@
       });
     </script>
 
-
-
   </body>
-
 </html>

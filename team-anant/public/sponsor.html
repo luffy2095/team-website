@@ -23,6 +23,8 @@
     <script src="js/bootstrap.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/npm.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/jquery-1.12.1.min.js"><\/script>')</script>
 
 
 
@@ -45,7 +47,7 @@
                   <a href="index.html">Home</a>
               </li>
               <li>
-                <a href="#subsysDrop" class="dropdown-toggle" data-toggle="collapse">SubSystems<span class="caret"></span></a>
+                <a href="#subsysDrop" id="hideteam" class="dropdown-toggle" data-toggle="collapse">SubSystems<span class="caret"></span></a>
                 <div class="collapse" id="subsysDrop">
                 <a href="subSystems.html#overview" style="text-indent: 50px;" class="smoothScroll">Overview</a>
                 <a href="subSystems.html#obc" style="text-indent: 50px;" class="smoothScroll">OBC</a>
@@ -57,7 +59,7 @@
                 </div>
               </li>
               <li>
-                <a href="#teamDrop" class="dropdown-toggle" data-toggle="collapse">Team <span class="caret"></span></a>
+                <a href="#teamDrop" id="hideSub" class="dropdown-toggle" data-toggle="collapse">Team <span class="caret"></span></a>
                 <div class="collapse" id="teamDrop">
                   <a href="team.html#Iimage" style="text-indent: 50px;" class="smoothScroll">Our Team</a>
                   <a href="team.html#obcid" style="text-indent: 50px;" class="smoothScroll">OBC</a>
@@ -117,7 +119,6 @@
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
     <script src="js/bootstrap.min.js"></script>
     <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
     <script src="js/vendor/holder.min.js"></script>
@@ -139,6 +140,19 @@
         $("#wrapper").toggleClass("toggled");
     });
 
+    </script>
+    <script >
+
+    $('#hideteam').on('click',function(evt){
+        $('#teamDrop').collapse('hide');
+        })
+    </script>
+
+    <script >
+
+    $('#hideSub').on('click',function(evt){
+        $('#subsysDrop').collapse('hide');
+        })
     </script>
   </body>
 
