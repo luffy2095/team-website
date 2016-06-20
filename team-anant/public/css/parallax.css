@@ -1,18 +1,55 @@
-body {
-  padding-bottom: 0px;
-  background-color: white;
+#indexBody {
+  /*background-color: black;*/
   background-image: url("team_cover_3.jpg");
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: 120% 120%;
   background-attachment: fixed;
+  background-position:center 0px;
+  height: 1000px;
+  max-height: 1000px;
+  /*position: absolute;
+*/
 }
 
 #subsysbody {
-  padding-bottom: 0px;
+
   background-color: white;
   background-image: url("subback1.jpg");
-
   background-repeat: no-repeat;
-  background-size: 100% 160%;
+  background-size: 100% 200%;
   background-attachment: fixed;
+  background-position:center 0px;
+  height: 1000px;
+  max-height: 1000px;
+
+
+}
+
+@media(min-width:768px) {
+  #indexBody {
+    background-color: white;
+    background-image: url("team_cover_3.jpg");
+    background-repeat: no-repeat;
+    background-size: 120% 120%;
+    background-attachment: fixed;
+    background-position:center 0px;
+    height: 1400px;
+    max-height: 1400px;
+    position: absolute;
+
+  }
+
+  #subsysbody {
+
+    background-color: white;
+    background-image: url("subback1.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 200%;
+    background-attachment: fixed;
+    background-position:center 0px;
+    height: 1000px;
+    max-height: 1000px;
+    position: absolute;
+  }
+
 }

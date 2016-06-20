@@ -24,7 +24,7 @@
 
         // Establish default settings
         var settings = $.extend({
-            speed        : 0.15
+            speed        : 0.05
         }, options);
 
 
@@ -56,9 +56,9 @@
 
 
     // Check if above or below viewport
-if (offset + height <= scrollTop || offset >= scrollTop + windowHeight) {
+/*if (offset + height <= scrollTop || offset >= scrollTop + windowHeight) {
 return;
-}
+}*/
 
 
 

@@ -29,6 +29,15 @@
     <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="js/jquery-1.12.1.min.js"><\/script>')</script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
+    <script type="text/javascript">
+      //$(window).load(function() {
+          // Animate loader off screen
+      //$(".se-pre-con").fadeOut("slow");;
+      });
+
+    </script>
+
     <!-- Custom styles for this template -->
     <link href="css/carousel.css" rel="stylesheet">
   </head>
@@ -37,12 +46,10 @@
 ================================================== -->
   <body id="subsysbody">
       <!-- Sidebar -->
-      <div id="wrapper" class="toggled">
+      <div id="wrapper" >
 
-        <div id="sidebar-wrapper" style="background-color: rgba(255, 255, 255, 0.1);">
-          <div class="container-fluid pull-left">
-            <a href="#menu-toggle" class="btn btn-default" style="position:fixed;margin-top:-45px;" id="menu-toggle"><i class="glyphicon glyphicon-th-list"></i></a>
-          </div>
+        <div id="sidebar-wrapper" style="margin-top:0px;background-color: rgba(255, 255, 255, 0.1);">
+
           <ul class="sidebar-nav">
                 <li class="sidebar-brand">
                     <a href="index.html">
@@ -92,7 +99,9 @@
       <!--  <div class="container-fluid pull-left">
           <a href="#menu-toggle" class="btn btn-default" style="position:fixed;" id="menu-toggle"><i class="glyphicon glyphicon-th-list"></i></a>
         </div>-->
-
+        <div class="container-fluid ">
+          <a href="#menu-toggle" class="btn btn-default" style="position:fixed;" id="menu-toggle"><i class="glyphicon glyphicon-th-list"></i></a>
+        </div>
 <!--###############################################################33-->
         <div class="container marketing" >
 
@@ -103,12 +112,15 @@
           <!-- START THE overview FEATURETTES -->
 
           <div class="row featurette" style="background-color:rgba(125,125,125,0.9)">
-            <div class="col-md-7">,
+            <div class="col-md-7">
               <h2 class="featurette-heading" style="color:black;text-align:left;">System Overview</h2>
-              <p class="lead" style="color:black;text-align:justify;text-indent;50px;">The satellite performs its functions due to combined functioning of various subsystems. Each subsystem specializes in a certain function of the satellite. Our satellite system is distributed, with different subsystems communicating with each-other via buses. With OBC being the brain and EPS being the power house, different subsystems perform their function as defined in the flightplan or when directed by OBC. ADCS ensures stability of the satellite while structural subsystem defines the physical body of the satellite. Telecommunications subsystem is responsible for the contact with ground station. Payload subsystem consists of experimental equipment aboard the satellite.</p>
+              <p class="lead" style="color:black;text-align:justify;text-indent;50px;">The satellite performs its functions due to combined functioning of various subsystems. Each subsystem specializes in a certain function of the satellite. Our satellite system is distributed, with different subsystems communicating with each-other via buses. With OnBoard Computer(OBC) being the brain and Electrical Power Subsystem(EPS) being the power house, different subsystems perform their functions as defined in the flightplan or when directed by the OBC. Attitude Determination and Control Subsystem(ADCS) ensures stability of the satellite while Structural Subsystem is responsible for designing the physical body of the satellite. Telecommunications Subsystem is responsible for the communicating with the ground station. Payload Subsystem consists of experimental equipments aboard the satellite.</p>
             </div>
             <div class="col-md-5">
-              <img class="featurette-image img-responsive center-block" style="margin-top:50px;margin-bottom:70px;"data-src="holder.js/500x500/auto" alt="Generic placeholder image" src="images/system.jpg">
+              <div class="container" style="width:420px;height:300px;margin-top:30%;">
+
+                <img class="featurette-image img-responsive center-block" style="display:block;height:100%;max-height:100%;width:100%;max-width:100%;margin-top:0px;"data-src="holder.js/500x500/auto" alt="Generic placeholder image" src="images/system.jpg">
+              </div>
             </div>
           </div>
 
@@ -122,11 +134,13 @@
             <div class="col-md-7 col-md-push-5">
               <h2 class="featurette-heading" style="color:black;text-align:left;">OnBoard Computer Subsystem</h2>
               <p class="lead" style="color:black;text-align:justify;text-indent:50px;">
-                The On Board Computer is the main string puller, controlling and coordinating all the other subsystems on the satellite. It regularly collects various housekeeping data from the other subsystems and accordingly switches between various modes of operation. The OBC in our case has a System-on-Chip based design, consisting of an FPGA and microprocessor. An SoC being inherently efficient, meets the power requirements associated with a nanosatellite. While the microprocessor will be busy coordinating among the subsystems, the hyperspectral image compression algorithm will be implemented on the FPGA. A hyperspectral image compression algorithm is required because of the large sizes of hyperspectral images and the constraint placed on the telemetry subsystem in terms of transferring huge amounts of data. 
+                The On Board Computer is the main string puller, controlling and coordinating all the other subsystems on the satellite. It regularly collects various housekeeping data from the other subsystems and accordingly switches between various modes of operations. The OBC in our case has a System-on-Chip(SoC) based design, consisting of a Field Programmable Gate Array(FPGA) and a microprocessor. An SoC being inherently efficient, meets the power requirements associated with a nanosatellite. While the microprocessor will be busy coordinating among the subsystems, the hyperspectral image compression algorithm will be implemented on the FPGA. A hyperspectral image compression algorithm is required because of the large sizes of hyperspectral images and the constraint placed on the telemetry subsystem in terms of transferring huge amounts of data.
               </p>
             </div>
             <div class="col-md-5 col-md-pull-7">
-              <img class="featurette-image img-responsive center-block" style="margin-top:50px;margin-bottom:70px;"data-src="holder.js/500x500/auto" alt="Generic placeholder image" src="images/obc.jpg">
+              <div class="container" style="width:420px;height:300px;margin-top:30%;">
+                <img class="featurette-image img-responsive center-block" style="display:block;height:100%;max-height:100%;width:100%;max-width:100%;margin-top:0px;" data-src="holder.js/500x500/auto" alt="Generic placeholder image" src="images/obc1.jpg">
+              </div>
             </div>
           </div>
 
@@ -156,14 +170,16 @@
                 first subsystem to be turned on after the satellite, it is also responsible for booting up OBC.
 
               </p>
-              <p class="lead" style="color:black;text-align:justify;text-indent:50px;">Our satellite has a hyperspectral camera, an intensive processor and huge amount of data to be
+              <p class="lead" style="color:black;text-align:justify;text-indent:50px;">Our satellite has a hyperspectral camera, an intensive processor and necessity to transfer huge amounts of data,
 
-                transferred making effective management of energy a categorical priority.
+               making effective management of energy a categorical priority.
 
               </p>
             </div>
             <div class="col-md-5">
-              <img class="featurette-image img-responsive center-block" style="margin-top:25%;margin-bottom:70px;"data-src="holder.js/500x500/auto" alt="Generic placeholder image" src="images/eps.jpg">
+              <div class="container" style="width:420px;height:300px;margin-top:30%;">
+                <img class="featurette-image img-responsive center-block" style="display:block;height:100%;max-height:100%;width:100%;max-width:100%;margin-top:0px;"data-src="holder.js/500x500/auto" alt="Generic placeholder image" src="images/eps.jpg">
+              </div>
             </div>
           </div>
 
@@ -202,7 +218,9 @@
               </p>
             </div>
             <div class="col-md-5 col-md-pull-7">
-              <img class="featurette-image img-responsive center-block" style="margin-top:35%;margin-bottom:70px;"data-src="holder.js/500x500/auto" alt="Generic placeholder image" src="images/ADCS1.jpg">
+              <div class="container" style="width:420px;height:300px;margin-top:30%;">
+                <img class="featurette-image img-responsive center-block" style="display:block;height:100%;max-height:100%;width:100%;max-width:100%;margin-top:0px;" data-src="holder.js/500x500/auto" alt="Generic placeholder image" src="images/ADCS1.jpg">
+              </div>
             </div>
           </div>
 
@@ -216,7 +234,7 @@
             <div class="col-md-7">
               <h2 class="featurette-heading"  style="color:black;text-align:left;">Structural And Thermal Subsystem</h2>
               <p class="lead"  style="color:black;text-align:justify;text-indent:50px;">
-                The structural subsystem deals with the design and analysis of the main structure of the satellite, by
+                The structural subsystem deals with the design and analysis of the main structure of the satellite by
 
                 proper allocation of dimensions and space to other subsystem components, keeping in mind the
 
@@ -239,7 +257,9 @@
               </p>
             </div>
             <div class="col-md-5">
-              <img class="featurette-image img-responsive center-block" style="margin-top:25%;margin-bottom:70px;"data-src="holder.js/500x500/auto" alt="Generic placeholder image" src="images/structural.jpg">
+              <div class="container" style="width:420px;height:300px;margin-top:30%;">
+                <img class="featurette-image img-responsive center-block" style="display:block;height:100%;max-height:100%;width:100%;max-width:100%;margin-top:0px;"data-src="holder.js/500x500/auto" alt="Generic placeholder image" src="images/structural.jpg">
+              </div>
             </div>
           </div>
 
@@ -286,7 +306,9 @@
               </p>
             </div>
             <div class="col-md-5 col-md-pull-7">
-              <img class="featurette-image img-responsive center-block" style="margin-top:35%;margin-bottom:70px;"data-src="holder.js/500x500/auto" alt="Generic placeholder image" src="images/satcom_final_1.jpg">
+              <div class="container" style="width:420px;height:300px;margin-top:30%;">
+                <img class="featurette-image img-responsive center-block" style="display:block;height:100%;max-height:100%;width:100%;max-width:100%;margin-top:0px;"data-src="holder.js/500x500/auto" alt="Generic placeholder image" src="images/satcom_final_1.jpg">
+              </div>
             </div>
           </div>
 
@@ -324,15 +346,15 @@
 
                   The data from the payload will be used for water quality monitoring in the region. It will take the images
 
-                  in different wavebands and after different levels of processing it will be able to provide the
-
-                  concentrations of different materials such as TSS (Total Suspended Solids) and chlorophyll-a, diffuse
+                  in different wavebands and after different levels of processing, provide the concentrations of different materials such as TSS (Total Suspended Solids) and chlorophyll-a, diffuse
 
                   attenuation coefficient, etc.
                 </p>
             </div>
             <div class="col-md-5">
-              <img class="featurette-image img-responsive center-block" style="margin-top:35%;margin-bottom:70px;"data-src="holder.js/500x500/auto" alt="Generic placeholder image" src="images/Payload1.jpg">
+              <div class="container" style="width:420px;height:300px;margin-top:30%;">
+                <img class="featurette-image img-responsive center-block" style="zoom:2;display:block;height:100%;max-height:100%;width:100%;max-width:100%;margin-top:0px;"  alt="Generic placeholder image" src="images/Payload1.jpg">
+              </div>
             </div>
           </div>
           <hr class="featurette-divider">
@@ -341,7 +363,7 @@
 
           <footer>
           <p id="top" class="pull-right "><a href="#overview" class="smoothScroll" style="color:red;font-weight:bold;font-size:20px;">Top</a></p>
-            <p style="color:black;font-weight:bold;font-size:20px;">&copy; A Team Anant Product </p>
+            <!--<p style="color:black;font-weight:bold;font-size:20px;">&copy; A Team Anant Product </p>-->
           </footer>
 
 
@@ -398,6 +420,16 @@
       speed : 0.05
       });
     </script>
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-75744912-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
 
   </body>
 </html>
